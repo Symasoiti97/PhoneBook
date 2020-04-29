@@ -1,0 +1,425 @@
+* {
+    box-sizing: border-box;
+    font-family: "Candara", serif;
+}
+
+html, body {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: #888888;
+}
+
+input {
+    display: block;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 30%;
+    height: 450px;
+    width: 300px;
+    background: #fefefe;
+}
+
+.header {
+    display: flex;
+    height: 15%;
+    background: #2b36ff;
+}
+
+.header > .text {
+    margin: auto;
+    color: #fefefe;
+    font-size: 28px;
+}
+
+.header a {
+    color: #fefefe;
+    text-decoration: none;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.header .active {
+    color: #888888;
+}
+
+.body.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    width: 100%;
+}
+
+.body.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: stretch;
+    overflow: auto;
+    height: 100%;
+}
+
+/*Login Form*/
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.login-form > input {
+    padding-left: 10px;
+    margin-top: 25px;
+    height: 40px;
+}
+
+.login-form > button {
+    margin-top: 15px;
+    height: 40px;
+}
+
+/* Groups */
+
+.group {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    border: none;
+    background: none;
+    font-size: 20px;
+}
+
+.group > .remove {
+    font-size: 20px;
+}
+
+.groups-form {
+    display: flex;
+    width: 100%;
+    border-top: 1px solid black;
+}
+
+.groups-form > input {
+    font-size: 25px;
+    height: 100%;
+    background: none;
+    border: none;
+}
+
+.groups-form > input:first-child {
+    font-size: 20px;
+    width: 100%;
+    padding-left: 10px;
+}
+
+/*Contacts Form*/
+
+.contacts-form {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border-top: 1px solid black;
+}
+
+.contacts-form > input {
+    font-size: 16px;
+    height: 100%;
+    background: none;
+    border: none;
+}
+
+.contacts-form > input:first-child {
+    font-size: 20px;
+    width: 100%;
+    padding-left: 10px;
+}
+
+
+/*Body Content Contacts*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.body > ul {
+    border-bottom: 1px solid gray;
+}
+
+ul.list-contact > li {
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px solid #888888;
+}
+
+ul.list-contact > li > button.item {
+    display: flex;
+    background: white;
+    border: none;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    font-size: 21px;
+}
+
+/* Body Content Contact */
+
+ul.contact > li > .name {
+    padding: 5px;
+}
+
+ul.contact > li > .content {
+    padding: 5px;
+}
+
+.category {
+    background: lavender;
+    padding: 5px;
+}
+
+.categoryItem {
+    padding: 5px;
+}
+
+/* Body Content Contact-Edit */
+
+select.gender {
+    font-size: 21px;
+}
+
+input.date {
+    font-size: 21px;
+}
+
+input.note {
+    background: none;
+    font-size: 21px;
+}
+
+.name > input::placeholder {
+    color: lightyellow;
+}
+
+/* */
+
+.add {
+    border: none;
+    background: none;
+    font-size: 30px;
+}
+
+.add:hover {
+    cursor: pointer;
+    color: blue;
+}
+
+.remove {
+    margin-left: auto;
+    border: none;
+    background: none;
+    font-size: 20px;
+}
+
+.remove:hover {
+    cursor: pointer;
+    color: red;
+}
+
+li .name {
+    display: flex;
+    justify-content: space-between;
+    background: #888888;
+    height: 50%;
+    font-size: 20px;
+}
+
+li .content {
+    background: #fefefe;
+    height: 50%;
+    width: 100%;
+    font-size: 22px;
+    border: none;
+}
+
+/* Body Content Groups*/
+
+li > button:hover {
+    cursor: pointer;
+    background: #888888;
+}
+
+/*Footer Login*/
+
+.footer.footer-login {
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.footer.footer-login > .text {
+    font-size: 18px;
+}
+
+.footer.footer-contacts {
+    display: flex;
+    height: 50px;
+}
+
+/* Footer Contact-Edit*/
+
+.footer .text {
+    margin: auto;
+    font-size: 20px;
+}
+
+.footer a {
+    text-decoration: none;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+}
+
+/* Input line*/
+
+.input-line {
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgba(121, 121, 121, 0.65);
+    font-size: 19px;
+}
+
+/* button style*/
+
+.btn {
+    color: black;
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.65);
+    font-size: 19px;
+}
+
+.btn:active {
+    color: #2b36ff;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+/* Message Error */
+
+.errorMessage {
+    color: red;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: chartreuse;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: forestgreen;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: flex;
+    width: 300px;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    padding: 15px;
+    border: 1px solid #888;
+    width: 300px;
+}
+
+
+/*Date input*/
+::-webkit-datetime-edit {
+    padding: 0;
+}
+
+::-webkit-datetime-edit-fields-wrapper {
+    background: none;
+}
+
+::-webkit-datetime-edit-text {
+    color: red;
+}
+
+::-webkit-datetime-edit-month-field {
+    color: blue;
+}
+
+::-webkit-datetime-edit-day-field {
+    color: green;
+}
+
+::-webkit-datetime-edit-year-field {
+    color: purple;
+}
+
+::-webkit-inner-spin-button {
+    display: none;
+}
+
+::-webkit-calendar-picker-indicator {
+    background: none;
+}
+
+.height-auto {
+    height: auto;
+}
+
+.full {
+    width: 100%;
+    height: 100%;
+}
+
+.border-none {
+    border: none;
+}
+
+.text-red {
+    color: red;
+}
