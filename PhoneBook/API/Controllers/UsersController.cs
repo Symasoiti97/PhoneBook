@@ -105,7 +105,12 @@ namespace API.Controllers
         {
             HttpContext.Response.Cookies.Delete("access_token");
         }
-
+        
+        [HttpPost("logout_v2")]
+        public void Logout_v2()
+        {
+            HttpContext.Response.Cookies.Delete("access_token");
+        }
 
         private void SetToken(string token)
         {
