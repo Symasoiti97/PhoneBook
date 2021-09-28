@@ -45,7 +45,7 @@ definitions:
         type: string
       tag:
         type: string
-      comment:
+      phone:
         type: string
 securityDefinitions:
   BasicAuth:
