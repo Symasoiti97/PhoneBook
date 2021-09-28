@@ -45,7 +45,7 @@ definitions:
         type: string
       tag:
         type: string
-      phone:
+      isActive:
         type: string
 securityDefinitions:
   BasicAuth:
