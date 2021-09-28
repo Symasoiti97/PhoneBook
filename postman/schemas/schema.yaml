@@ -45,8 +45,6 @@ definitions:
         type: string
       tag:
         type: string
-      comment:
-        type: string
       phone:
         type: string
 securityDefinitions:
